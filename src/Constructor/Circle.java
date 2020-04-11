@@ -1,8 +1,17 @@
+package Constructor;
+
+import java.util.Random;
+
 public class Circle {
     private double radiusIsLong;
     private double area;
     private String color;
+    {
+        Random random = new Random(100);
 
+        radiusIsLong = random.nextDouble();
+
+    }
 
     public double getRadiusIsLong() {
         return radiusIsLong;
@@ -37,5 +46,11 @@ public class Circle {
         this.radiusIsLong = radiusIsLong;
     }
 
+    public double area() {
+        return this.radiusIsLong * Math.PI;
+    }
+    public double radius() {
+        return (this.radiusIsLong * 2) * Math.PI;
+    }
 
 }
